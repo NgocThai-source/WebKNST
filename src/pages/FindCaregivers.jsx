@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
 import CaregiverCard from '../components/CaregiverCard';
 import useResponsive from '../hooks/useResponsive';
+import { AdjustmentsHorizontalIcon } from '@heroicons/react/24/outline';
 
 const FindCaregivers = () => {
   const { isDesktop } = useResponsive();
