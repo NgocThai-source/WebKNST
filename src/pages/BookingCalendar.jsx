@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import DateSelector from '../components/DateSelector';
 import TimeSlotSelector from '../components/TimeSlotSelector';
-import { XMarkIcon, UserIcon, ClockIcon, CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon, ClockIcon, CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import useResponsive from '../hooks/useResponsive';
 
 const BookingCalendar = () => {
   const { isDesktop } = useResponsive();
-  const [selectedCaregiver, setSelectedCaregiver] = useState({
+  const [selectedCaregiver] = useState({
     name: 'Ngọc Lan',
     role: 'Y tá sau sinh',
     rating: 4.9,
@@ -16,6 +16,7 @@ const BookingCalendar = () => {
     location: 'Quận 1, TP.HCM',
     avatar: 'https://randomuser.me/api/portraits/women/32.jpg'
   });
+  // const [setSelectedCaregiver] = useState(null); // Không sử dụng
 
   return (
     <motion.div
